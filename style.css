@@ -1,0 +1,57 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    transition: color 1s ease;
+}
+
+#poetic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80ch;
+}
+
+#text-art {
+    white-space: pre-wrap;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Color classes with both foreground and background color */
+.color1 { color: #ffffff; background-color: #0000ff; }
+.color2 { color: #00ff00; background-color: #000000; }
+.color3 { color: #ff0000; background-color: #ffffff; }
+.color4 { color: #ffff00; background-color: #ff00ff; }
+/* Add more color combinations if needed */
+
+.animating {
+    position: relative;
+    animation: dance 1s infinite alternate ease-in-out;
+}
+
+/* Keyframes for the dancing animation */
+@keyframes dance {
+    0% { transform: translate(0, 0) rotate(0deg) scale(1); }
+    100% { transform: translate(10px, -10px) rotate(360deg) scale(1.5); }
+}
